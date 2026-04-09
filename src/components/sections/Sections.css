@@ -1,0 +1,178 @@
+/* Sections Layout Utilities */
+
+.section-header {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: var(--text-h2);
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+}
+
+/* About Section */
+.about-highlights {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.about-highlights li {
+  position: relative;
+  margin-bottom: 12px;
+  color: var(--color-text-primary);
+}
+
+.about-highlights li::before {
+  content: '▹';
+  position: absolute;
+  left: -20px;
+  color: var(--color-accent);
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.skill-category-title {
+  font-size: var(--text-h3);
+  margin-bottom: 16px;
+  color: var(--color-text-primary);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Projects & Labs Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.project-links {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-caption);
+  font-family: var(--font-secondary);
+}
+
+/* Experience Section */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.experience-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.experience-role {
+  font-size: var(--text-h3);
+  color: var(--color-text-primary);
+}
+
+.experience-company {
+  color: var(--color-accent);
+}
+
+.experience-duration {
+  font-family: var(--font-secondary);
+  font-size: var(--text-caption);
+  color: var(--color-text-muted);
+}
+
+.experience-points {
+  padding-left: 20px;
+}
+
+.experience-points li {
+  margin-bottom: 8px;
+  color: var(--color-text-secondary);
+}
+
+/* Certifications */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+/* SOC Methodology */
+.methodology-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  counter-reset: step;
+}
+
+.methodology-step {
+  padding: 16px 24px;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  counter-increment: step;
+}
+
+.methodology-step::before {
+  content: counter(step) ".";
+  color: var(--color-accent);
+  font-family: var(--font-secondary);
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}

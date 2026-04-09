@@ -1,0 +1,38 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 120px; /* offset for nav */
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title {
+  margin-bottom: 16px;
+  color: var(--color-text-primary);
+}
+
+.hero-subtitle {
+  margin-bottom: 24px;
+  color: var(--color-accent);
+  font-family: var(--font-secondary);
+}
+
+.hero-description {
+  margin-bottom: 40px;
+  font-size: clamp(18px, 3vw, 22px);
+  max-width: 600px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+}
