@@ -15,7 +15,7 @@ Personal portfolio showcasing SOC engineering projects, labs, and cybersecurity 
 - SOC Methodology
 
 ## Live Demo
-(coming soon)
+https://portfolio-three-virid-40.vercel.app/#contact
 
 ## Author
 Abbass Harbi
